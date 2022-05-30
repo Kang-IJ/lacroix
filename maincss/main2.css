@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.hidden { display: none; }
+
+/*base*/
+body, ul, li, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+body { font: normal 12px "Permanent Marker", serif; }
+ul { list-style: none; }
+img { vertical-align: top; border: 0; }
+a { text-decoration: none; }
+
+
+#header { position: relative; z-index: 10; }
+#header .logo { position: absolute; top: 30px; left: 30px; }
+#header .logo img { width: 150px; }
+
+.logo2 { position: relative; position:fixed; top: 30px; left: 50px; display: none; z-index: 3; }
+
+.logo2_1 { position: relative; position:fixed; top: 27px; left: 45px; display: none; z-index: 3; }
+
+.logo2_1 img { width: 50px; }
+
+#header .gnb0 { width: 630px; overflow: hidden; position: absolute; top: 30px; right: 150px; }
+#header .gnb0 li { float: left; margin-left: 50px; }
+#header .gnb0 li:nth-child(1) { margin-left: 0; }
+#header .gnb0 li a { color: #000; font-size: 25px; transition: all 0.5s; } 
+#header .gnb0 li a:hover { color: #001e60; }
+
+/*우측 상단 메뉴*/
+.menu_btn{width:30px;height:17px;position:fixed;top:40px;right:40px;cursor:pointer;z-index:3;}
+.menu_btn p{width:30px;height:2px;background:#000;transition:all 0.3s;}
+.menu_btn p.x2{margin:5px 0;opacity:1}
+
+.menu_btn p.x1.active{transform:rotate(-45deg) translate(-6px,4px);background:#fff;}
+.menu_btn p.x3.active{transform:rotate(45deg) translate(-6px,-4px);background:#fff;}
+.menu_btn p.x2.active{opacity:0}
+
+.back{width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	top: -50px;
+	right: -50px;
+	background: rgba(0, 0, 0, 0.5);
+	transition: 0.5s; z-index: 2; }
+.back.active{transform: scale(100,100);}
+
+.menu { position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%); transition: 0.3s;opacity: 0; z-index: 5; }
+.menu ul li a { font-size: 30px; color: #fff; line-height: 2; text-shadow:0 3px 4px rgba(0,0,0,0.5); z-index: 10; text-align: center; display: none; transition: 0.3s; }
+.menu ul li:hover a { color: gray; }
+
+.menu.active { opacity: 1; }
+.menu.active ul li a { display: block; }
+		
+
+
+
+/*오른쪽 점들*/
+.dott_r{ position: fixed; top: 50%; right: 25px; transform: translateY(-50%); z-index: 10; }
+.dott_r li { height: 21px; }
+.dott_r li a { display: block; width: 4px; height: 4px; background: #001e60; border-radius: 50%; float: right; transition: all 0.1s ease-in-out; }
+.dott_r li:hover a { width: 10px; height: 10px; margin: -3px -3px 0px 0px; }
+.dott_r li.on a { width: 10px; height: 10px; margin: -3px -3px 0px 0px; }
+
+.dott_r li span.txtm { position: relative; color: #fff; opacity: 0; transition: all 0.5s; }
+.dott_r li:first-child span.txtm { left: -38px; top: -4px; color: #000; }
+.dott_r li:nth-child(2) span.txtm { left: -55px; top: -4px; color: #a9004b; }
+.dott_r li:nth-child(3) span.txtm { left: -65px; top: -4px; color: #d62404; }
+.dott_r li:nth-child(4) span.txtm { left: -55px; top: -4px; color: #007e22; }
+.dott_r li:nth-child(5) span.txtm { left: -35px; top: -4px; color: #0054a1; }
+.dott_r li:nth-child(6) span.txtm { left: -58px; top: -4px; color: #883700; }
+.dott_r li:nth-child(7) span.txtm { left: -75px; top: -4px; color: red; }
+.dott_r li:last-child span.txtm { left: -80px; top: -4px; color: #fff; }
+
+
+.dott_r li:hover span.txtm { opacity: 1; }
+.dott_r li.on span.txtm { opacity: 1; }
+
+
+/*section*/
+section { width: 100%; height: 700px; position: relative; background-size: cover; background-position: right center; background-attachment: fixed; overflow: hidden; }
+
+.page0 { background-image: url(../images/recipes-bg-1920x960.jpg); z-index: 1; }
+.page1 { background-image: url(../images/back1.jpg); z-index: 1; }
+.page2 { background-image: url(../images/back2.jpg); z-index: 1; }
+.page3 { background-image: url(../images/back3.jpg); z-index: 1; }
+.page4 { background-image: url(../images/back4.jpg); z-index: 1; }
+.page5 { background-image: url(../images/back5.jpg); z-index: 1; }
+.page6 { z-index: 1; }
+
+
+.page0 p { color: #fff; font-size: 40px; position: relative; top: 30%; left: 15%; width: 1122px; }
+.page0 p span { font-size: 60px; } 
+
+
+/*텍스트 박스*/
+
+article { text-align: center; position: absolute;  width: 600px; overflow: hidden; top: 50%; transform: translateY(-50%); right: 123px; z-index: 11; }
+article a { color: #fff; font-size: 20px; display: block; width: 200px; height: 40px; line-height: 40px; transition: all 0.5s; margin: 0 auto; }
+article p:first-child { font-size: 80px; letter-spacing: 2px; line-height: 1; }
+article span { font-size: 16px; }
+article .dec { font-size: 30px; color: #fff; margin: 50px 0 60px;  }
+
+.page1 p:nth-child(1) { color: #a9004b; }
+.page2 p:nth-child(1) { color: #d62404; }
+.page3 p:nth-child(1) { color: #007e22; }
+.page4 p:nth-child(1) { color: #0054a1; }
+.page5 p:nth-child(1) { color: #883700; }
+
+.page1 p:nth-child(3) a { background: #a9004b; }
+.page1 p:nth-child(3) a:hover { background: #7c023c; }
+.page2 p:nth-child(3) a { background: #d62404; }
+.page2 p:nth-child(3) a:hover { background: #9a2100; }
+.page3 p:nth-child(3) a { background: #007e22; }
+.page3 p:nth-child(3) a:hover { background: #004914; }
+.page4 p:nth-child(3) a { background: #0054a1; }
+.page4 p:nth-child(3) a:hover { background: #003b71; }
+.page5 p:nth-child(3) a { background: #883700; }
+.page5 p:nth-child(3) a:hover { background: #542301; }
+
+
+.video {
+position: fixed; 
+top: 50%;
+left: 50%;
+z-index: 1; 
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+transform: translate(-50%,-50%);
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-moz-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+}
+
+
+/*슬라이드*/
+#cont1 { width: 100%; height: 100%;  }
+#cont1-1 { margin: 5% auto 0; text-align:center; width: 90%; height: 100%; box-sizing: border-box; position:relative; }	
+#cont1-1 h3 { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); margin: 0 auto;  font-size: 50px; }
+#cont1-1 a { color: #000; }
+
+#cont1-1 ul li { width: 300px; height: 650px; }
+#cont1-1 ul li img { margin: 175px 0 20px 0; }
+.cont1_txt {}
+.cont1_txt .sp1 { font-size: 25px; }
+.cont1_txt .sp2 { font-size: 18px; }
+
+#cont1 .prev_btn { position: absolute; top: 50%; left:200px; transform: translate(-50%,0); }
+#cont1 .next_btn { position: absolute; top: 50%; right:200px; transform: translate(-50%,0); }
+
+#cont1-1 .all { margin-top: 50px; text-align: center; font-size: 15px; color: #fff; line-height: 0.5; }
+#cont1-1 .all a { font-size: 15px; color: #fff; background: #001e60; transition: all 0.5s; width: 250px; height: 39px; display: inline-block; line-height: 39px; }
+#cont1-1 .all a:hover { background: #000d27; }
+
+
+
+
+/* footer */
+#sec7 div { float: left; text-align: center; }
+#sec7 div h3 { font-size: 70px; color: #fff; }
+#sec7 div p { color: #525252; font-size: 20px; }
+#sec7 div a { color: #777; transition: 0.3s; }
+#sec7 div a:hover { color: #aaa; text-decoration: underline; }
+#sec7 .foot1 { width: 50%; height: 100%; }
+#sec7 .foot1 .foot1_1 { width: 100%; height: 50%; background: #1f1f1f; }
+
+#sec7 .foot1 .foot1_1 h3 { margin-top: 120px; }
+#sec7 .foot1 .foot1_2 { width: 100%; height: 50%; background: #232323; }
+#sec7 .foot1 .foot1_2 h3 { margin-top: 120px; }
+
+
+#sec7 .foot2 { width: 50%; height: 100%; background: #1c1c1c; }
+#sec7 .foot2 h3 { margin-top: 320px; }
+
+#sec7 .foot2 input { padding-left: 10px; box-sizing: border-box; margin-top: 20px; width: 250px; height: 40px; border: none; }
+#sec7 .foot2 button { width: 100px; height: 30px; border: none; margin-top: 20px; cursor: pointer; background: #444; color: #fff; transition: 0.3s; }
+#sec7 .foot2 button:hover { background: #666; }
+
+
+
+/* 모바일 */
+ @media screen and (max-width:639px){
+     #menu { display: none; }
+
+#visual h2 { top: 55%; left: 30%; font-size: 40px; }
+#visual h3 { top: 65%; left: 33%; font-size: 20px; }
+
+#contents .tab_btn ul { width: 272px; overflow: hidden; }
+#contents .tab_btn ul li { font-size: 25px; margin-right: 30px; }
+#contents .tab_cont div ul li { float: left; width: 50%; text-align: center; margin-bottom: 4%; }
+#contents .tab_cont div ul li a { font-size: 20px; }
+     
+     
+}
+
+
+/*  태블릿 */
+ @media screen and (min-width:640px) and (max-width:1024px){
+     .gnb0 { display: none; }
+     
+
+}
+
+/* PC */
+@media all and (min-width:1024px){
+
+}
+
+.top { position: relative; position: fixed; bottom: 30px; right: 30px; display: none; z-index: 10; }
+
+
+
+
+
+
+

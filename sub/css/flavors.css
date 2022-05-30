@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*visual*/
+
+#visual { width: 100%; height: 500px; background: url(../images/flavors-bg-1920x960.jpg) no-repeat center center fixed; background-size: cover; position: relative; }
+
+#visual h2 { position: absolute; top: 55%; left: 20%; transform: translate(-50%,-50%); color: #fff; font-size: 50px; }
+#visual h3 { position: absolute; top: 70%; left: 23%; transform: translate(-50%,-50%); color: #fff; font-size: 30px; }
+
+
+/*content*/
+
+#content { width: 100%; overflow: hidden; position: relative; }
+#content .tab_btn { width: 100%; height: 130px; font-family: 'Amatic SC', cursive; font-weight: bold; position: relative; }
+#content .tab_btn ul { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+#content .tab_btn ul li { font-size: 35px; float: left; margin-right: 50px; }
+#content .tab_btn ul li.active a { color: #ff637b; }
+#content .tab_btn ul li:last-child { margin: 0; }
+#content .tab_btn ul li a { color: #000; }
+
+#content .tab_cont { width: 100%; overflow: hidden; font-family: 'Amatic SC', cursive; font-weight: bold; margin-top: 10px; }
+#content .tab_cont div ul li { float: left; width: 25%; text-align: center; margin: 1% 0 4% 0; }
+#content .tab_cont div ul li a { color: #000; text-align: center; font-size: 27px;  }
+
+#content .tab_cont div ul li p { margin-top: 15px; }
+#content .tab_cont div ul li a:hover p { text-decoration: underline; }
+
+#content .tab_cont div ul li a img { width: 30%; transition: 0.3s; }
+#content .tab_cont div ul li a:hover img { transform: scale(1.07); }
+
+
+#content .tab_cont div ul li .Apricot { color: #d92a00; }
+#content .tab_cont div ul li .Berry { color: #89247c; }
+#content .tab_cont div ul li .Coconut { color: #914000; }
+#content .tab_cont div ul li .Hi-Biscus { color: #b91f3e; }
+#content .tab_cont div ul li .Keylime { color: #076f1c; }
+#content .tab_cont div ul li .Lemon { color: #de8602; }
+#content .tab_cont div ul li .Lime { color: #017c29; }
+#content .tab_cont div ul li .Limoncello { color: #ab35dc; }
+#content .tab_cont div ul li .Orange { color: #d82f08; }
+#content .tab_cont div ul li .Pamplemousse { color: #ca2501; }
+#content .tab_cont div ul li .Passionfruit { color: #d50320; }
+#content .tab_cont div ul li .Pasteque { color: #be0121; }
+#content .tab_cont div ul li .Peach-Pear { color: #e53601; }
+#content .tab_cont div ul li .Pure { color: #0156a1; }
+#content .tab_cont div ul li .Razz-Cranberry { color: #d30b2a; }
+#content .tab_cont div ul li .Tangerine { color: #cf2b00; }
+
+#content .tab_cont div ul li .MURE-PEPINO { color: #920c4f; }
+#content .tab_cont div ul li .KIWI-SANDIA { color: #2a9230; }
+#content .tab_cont div ul li .MELON-POMELO { color: #d84f60; }
+#content .tab_cont div ul li .CERISE-LIMON { color: #d70815; }
+#content .tab_cont div ul li .POMME-BAYA { color: #f18a02; }
+#content .tab_cont div ul li .PINA-FRAISE { color: #71aa24; }
+
+#content .tab_cont div ul li .LaCOLA { color: #002665; }
+#content .tab_cont div ul li .COCONUT-COLA { color: #5c3b17; }
+#content .tab_cont div ul li .EXOTICA { color: #54300d; }
+#content .tab_cont div ul li .CUBANA { color: #11afac; }
+
+
+
+/* 모바일 */
+ @media screen and (max-width:639px){
+
+#visual h2 { top: 55%; left: 30%; font-size: 40px; }
+#visual h3 { top: 65%; left: 33%; font-size: 20px; }
+
+#content .tab_btn ul { width: 272px; overflow: hidden; }
+#content .tab_btn ul li { font-size: 25px; margin-right: 30px; }
+#content .tab_cont div ul li { float: left; width: 50%; text-align: center; margin-bottom: 4%; }
+#content .tab_cont div ul li a { font-size: 20px; }
+     
+     
+}
+
+
+/*  태블릿 */
+ @media screen and (min-width:640px) and (max-width:1024px){
+     
+#visual h2 { top: 55%; left: 23%; font-size: 45px; }
+#visual h3 { top: 68%; left: 27%; font-size: 25px; }
+     
+#content .tab_cont div ul li img { width: 35%;}
+     
+#content .tab_btn ul { width: 337px; overflow: hidden; }
+#content .tab_btn ul li { font-size: 30px; margin-right: 40px; }
+#content .tab_cont div ul li { width: 33.3333%; text-align: center; }
+#content .tab_cont div ul li a { font-size: 22px; }
+}
+
+/* PC */
+@media all and (min-width:1024px){
+
+}
+
+
+
+
+
+
+
+

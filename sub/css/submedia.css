@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+
+
+/* 모바일 */
+ @media screen and (max-width:639px){
+     .gnb0 { display: none; }
+
+#content .tab_btn ul { width: 280px; overflow: hidden; }
+
+#contents { height: 800px; text-align: center; }
+#contents .drink { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); width: 140px; }
+#contents .description { top: 65%; left: 50%; transform: translateX(-50%); }
+#contents .description h2 { font-size: 50px; }
+#contents .description p { font-size: 25px; }
+#contents .description span { position: absolute; left: 50%; transform: translateX(-50%); }
+#contents .description span a { font-size: 20px; width: 120px; height: 30px; line-height: 30px; margin-top: 15px; }
+
+     
+}
+
+
+/*  태블릿 */
+ @media screen and (min-width:640px) and (max-width:1024px){
+     .gnb0 { display: none; }
+
+#content .tab_btn ul { width: 350px; overflow: hidden; }
+
+#contents { height: 1000px; text-align: center; }
+#contents .drink { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); width: 180px; }
+#contents .description { top: 65%; left: 50%; transform: translateX(-50%); }
+#contents .description h2 { font-size: 60px; }
+#contents .description p { font-size: 30px; }
+#contents .description span { position: absolute; left: 50%; transform: translateX(-50%); }
+
+#contents .description span a { font-size: 20px; width: 120px; height: 30px; line-height: 30px; margin-top: 15px; }
+
+
+}
+
+/* PC */
+@media all and (min-width:1024px){
+
+}
+
+
+

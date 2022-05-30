@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+
+/*contents*/
+
+#contents { font-family: 'Amatic SC', cursive; width: 100%; background: #fdcf52; height: 969px; position: relative; }
+#contents .drink { position: absolute; top: 50%; left: 30%; transform: translateY(-50%); }
+
+#contents .description { width: 600px; height: 340px; position: absolute; left: 55%; top: 50%; transform: translateY(-50%); }
+#contents .description h2 { font-size: 80px; color: #da2f00; font-weight: bold; }
+#contents .description p { font-size: 45px; color: #fff; font-weight: bold; }
+#contents .description span a { color: #fff; font-size: 30px; background: #da2f00; display: block; width: 150px; text-align: center; height: 40px; line-height: 40px; margin-top: 20px; transition: 0.5s; }
+
+#contents .description span a:hover { color: #da2f00; background: none; border: 1px solid #da2f00; box-sizing: border-box; }
+
+
